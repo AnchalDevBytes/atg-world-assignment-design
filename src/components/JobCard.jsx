@@ -15,12 +15,12 @@ const JobCard = () => {
 
 
   return (
-    <div className='w-full h-[270px] shadow-md border rounded-md'>
-      <div className='p-4 flex flex-col gap-5'>
+    <div className='w-full lg:h-[270px] shadow-md border rounded-md'>
+      <div className='lg:p-4 p-2 flex flex-col gap-2 lg:gap-5'>
         <span>💼️ Job</span>
         <div className='flex flex-col gap-3'>
             <div className='relative flex justify-between items-center gap-32'>
-                <h2 className='text-2xl'>Software Developer</h2>
+                <h2 className='lg:text-2xl text-xl'>Software Developer</h2>
                 <SlOptions onClick={handleSlOptionsClick} className='bg-gray-200 rounded-md text-4xl p-2'  />
                 <Modal isVisible={isModalOpen} >
                     <button>Edit</button>

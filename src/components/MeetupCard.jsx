@@ -14,15 +14,15 @@ const MeetupCard = () => {
 
 
   return (
-    <div className='w-full h-[480px] shadow-md border rounded-md'>
-      <div className='w-full h-[220px] rounded-tr-md rounded-tl-md'>
+    <div className='w-full lg:h-[480px] shadow-md border rounded-md'>
+      <div className='w-full h-[150px] lg:h-[220px] rounded-tr-md rounded-tl-md'>
         <img className='w-full h-full rounded-tr-md rounded-tl-md' src="/assets/card2.png"alt='card' />
       </div>
-      <div className='p-4 flex flex-col gap-5'>
+      <div className='lg:p-4 p-2 flex flex-col gap-3 lg:gap-5'>
         <span>🗓️ Meetup</span>
         <div className='flex flex-col gap-3'>
-            <div className='relative flex justify-between items-center gap-32'>
-                <h2 className='text-2xl'>Finance & Investment Elite Social Mixer @Lujiazui</h2>
+            <div className='relative flex justify-between items-center lg:gap-32 gap-5'>
+                <h2 className='lg:text-2xl text-xl'>Finance & Investment Elite Social Mixer @Lujiazui</h2>
                 <SlOptions onClick={handleSlOptionsClick} className='bg-gray-200 rounded-md text-4xl p-2'  />
                 <Modal isVisible={isModalOpen} >
                     <button>Edit</button>

@@ -6,7 +6,7 @@ import JobCard from './JobCard'
 const Article = () => {
 
   return (
-    <div className=' w-[70vw] min-h-screen flex gap-5 flex-col'>
+    <div className=' lg:w-[70vw] w-full min-h-screen flex gap-5 flex-col'>
         <div>
             <ArticleCard
                 imageSrc='/assets/card0.png'

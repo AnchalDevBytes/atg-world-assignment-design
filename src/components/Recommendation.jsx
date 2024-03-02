@@ -5,7 +5,7 @@ import { CiCircleInfo } from "react-icons/ci";
 
 const Recommendation = () => {
   return (
-    <div className='w-[28vw] h-screen px-10 flex flex-col py-10 gap-5 '>
+    <div className='w-[28vw] h-screen px-10 hidden lg:flex flex-col py-10 gap-5 '>
         <div className='flex justify-between items-center border-b-2 pb-1 border-gray-300'>
             <div className='flex gap-2 items-center'>
               <IoLocationOutline className='text-2xl font-bold' />

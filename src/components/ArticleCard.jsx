@@ -13,15 +13,15 @@ const ArticleCard = ({ imageSrc, headline, authorName, authorProfile, topTitle})
     };
 
   return (
-    <div className='w-full h-[480px] shadow-md border rounded-md'>
-      <div className='w-full h-[220px] rounded-tr-md rounded-tl-md'>
+    <div className='w-full lg:h-[480px] shadow-md border rounded-md'>
+      <div className='w-full h-[150px] lg:h-[220px] rounded-tr-md rounded-tl-md'>
         <img className='w-full h-full rounded-tr-md rounded-tl-md' src={imageSrc} alt='card' />
       </div>
-      <div className='p-4 flex flex-col gap-5'>
+      <div className='lg:p-4 p-2 flex flex-col gap-3 lg:gap-5'>
         <span>{topTitle}</span>
         <div className='flex flex-col gap-1'>
-          <div className='flex justify-between items-center gap-32 relative'>
-            <h2 className='text-2xl'>{headline}</h2>
+          <div className='flex justify-between items-center lg:gap-32 gap-5 relative'>
+            <h2 className='lg:text-2xl text-xl'>{headline}</h2>
             <SlOptions className='bg-gray-200 rounded-md text-4xl p-2' onClick={handleSlOptionsClick} />
             <Modal isVisible={isModalOpen} >
                 <button>Edit</button>
@@ -29,7 +29,7 @@ const ArticleCard = ({ imageSrc, headline, authorName, authorProfile, topTitle})
                 <button>Option 3</button>
             </Modal>
           </div>
-          <p className='text-lg font-normal tracking-wide text-gray-500'>
+          <p className='lg:text-lg text-sm font-normal tracking-wide text-gray-500'>
             I’ve worked in UX for the better part of a decade. From now on, I plan to rei…
           </p>
         </div>
